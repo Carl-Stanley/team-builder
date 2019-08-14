@@ -1,17 +1,17 @@
-const teamMembers = {
+export const teamMembers = {
     
-    name : "John Lennon",
+    1 : {name : "John Lennon",
     email : "jlennone@beatles.org",
-    role : "Backup Vocals/Guitar",
-    name : "Paul McCartney",
+    role : "Backup Vocalist/Guitarist"},
+    2 : {name : "Paul McCartney",
     email : "pmcartney@beatles.org",
-    role : "Front Man",
-    name : "Ringo Star",
+    role : "Front Man/Bassist"},
+   3 : {name : "Ringo Star",
     email : "rstar@beatles.org",
-    role : "Drummer",
-    name : "George Harrison",
+    role : "Drummer"},
+    4 : {name : "George Harrison",
     email : "gharrison@beatles.org",
-    role : "Bass/Guitar"
+    role : "Guitarist"}
 };
 
-export default teamMembers;
+ 
