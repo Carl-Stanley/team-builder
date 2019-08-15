@@ -1,2 +1,0 @@
-import {teamMembers} from "./Data";
-

@@ -31,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+
+.membercard {
+  padding-top: 5px;
+  height: 150px;
+  width: 300px;
+  border: #282c34 solid 1px;
+  margin: 0 auto;
+
+}
+
+.Form {
+
+  padding-bottom: 10px;
+  
+
+}

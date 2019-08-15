@@ -1,18 +1,32 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { teamMembers } from "./Data";
+import React, { useState } from 'react';
+import data from "./Data";
+import MemberForm from "./MemberForm"
+import MemberList from "./MemberList"
 
+import "./App.css"
 function App() {
+
+  const [members, setMembers] = useState(data);
+
+ console.log(members)
+
+ const addNewMember = member => {
+  setMembers([...members, member]);
+};
+
+
   return (
     <div className="App">
-      <form>
-        <input />
-      </form>
+      <h2>Join the Band!</h2>
+      <div className="FormCard">
+       <MemberForm addNewMember={addNewMember}/>
+     </div>
+      <div className="Cards">
+     <MemberList  memList={members}/>
+     </div>
+     
     </div>
   );
 }
-
-console.log(teamMembers);
 
 export default App;
