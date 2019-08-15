@@ -3,24 +3,21 @@ import React, { useState } from "react";
 
 const MemberForm = props=>{
    
-     const [names, setNames]=useState({ 
-     name: "", 
-
-     role: "",
-
-     email: ""
-     
-     });
+     const [names, setNames]=useState({ name: "", role: "",email: ""});
      const changetHandler = event =>{
-     setNames({...names, [event.target.name]: event.target.value})
+     
+        setNames({...names, [event.target.name]: event.target.value})
+    
+    
     }
     
     console.log(names)
     const onSubmitForm = event=>{
+        
         event.preventDefault();
         const newMember ={
             ...names, 
-            id: Date.now()        
+            memberID: Date.now()        
         }
       props.addNewMember(newMember);
     }
@@ -29,6 +26,8 @@ const MemberForm = props=>{
     return(
 
     <form className="Form" onSubmit={onSubmitForm}>
+
+        <button type="submit">Add to Team</button>   
 
         <label htmlFor="name">Enter Name:</label>
         
@@ -52,7 +51,7 @@ const MemberForm = props=>{
         
         
         
-        <button type="submit">Add to Team</button>
+        
 
 
     </form>
