@@ -11,7 +11,7 @@ const MemberForm = props=>{
     
     }
     
-    console.log(names)
+    
     const onSubmitForm = event=>{
         
         event.preventDefault();

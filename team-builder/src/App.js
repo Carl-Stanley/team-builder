@@ -7,9 +7,6 @@ import "./App.css"
 function App() {
 
   const [members, setMembers] = useState(data);
-
- console.log(members)
-
  const addNewMember = member => {
   setMembers([...members, member]);
 };
