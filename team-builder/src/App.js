@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import data from "./Data";
-import MemberForm from "./MemberForm"
-import MemberList from "./MemberList"
+import MemberForm from "./TeamForm"
+import MemberList from "./TeamList"
 
 import "./App.css"
 function App() {
@@ -25,5 +25,5 @@ function App() {
     </div>
   );
 }
-
+console.log(data);
 export default App;
